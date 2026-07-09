@@ -3,9 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Imagens</title>
 </head>
 <body>
     
+<h1>IMAGENS</h1>
+<!--Texto Principal da página, que indica que o conteúdo se refere a imagens.-->
+
+<img src="../img/camisa.jpg" alt="Camisa" height="100%"> <!-- Atributo alt é usado para fornecer uma descrição alternativa da imagem, caso ela não possa ser exibida. -->
+
+<br>
+
+<figure> <!-- Elemento <figure> é usado para agrupar uma imagem e sua legenda. -->
+    <img src="../img/milkshake.jpeg" alt="Milkshake" loading="lazy" width="13%%"> <!-- Atributos width e height são usados para definir a largura e altura da imagem, respectivamente.
+não altere largura e altura na mesma foto, pois deforma a imagem. Loading="lazy" atrasa o carregamento da imagem até que ela seja necessária.-->
+<figcaption>Milshake de paçoca e Milkshake de KinderOvo</figcaption> <!-- Elemento <figcaption> é usado para fornecer uma legenda para a imagem. -->
+</figure>
+
+<br>
+
+<figure>
+    <img src="../img/iphone.jpg">
+</figure>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<h2>VIDEOS</h2>    <!--Texto Principal da página, que indica que o conteúdo se refere a vídeos.-->
+<video controls width="25%" muted loop poster="../img/milkshake.jpeg"> <!-- Atributo controls adiciona controles de reprodução ao vídeo, como play, pause e volume. Atributo autoplay reproduz o vídeo automaticamente.
+    Atributo muted reproduz o vídeo em silêncio. Atributo loop faz com que o vídeo se repita. Atributo poster exibe uma imagem de capa antes da reprodução. 
+    Autoplay e Poster não funcionam juntos.-->
+    <source src = "../video/video.mp4" type="video/mp4" alt="Vídeo apresentando o SENAI d Sapucaí"> <!-- Atributo controls adiciona controles de reprodução ao vídeo, como play, pause e volume. -->
+Seu navegador não suporta a reprodução de vídeos. <!-- Mensagem exibida caso o navegador não suporte a reprodução de vídeos. -->
+
+<!--implementar abaixo o iframe youtube e iframe google maps, depois implementar um vídeo e localização no index.html.-->
+
+
+
 </body>
 </html>

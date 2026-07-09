@@ -1,114 +1,80 @@
 <!doctype html>
 <html lang="pt-BR">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fomulário</title>
+    <meta charset="UTF-8" /> <!-- Define o conjunto de caracteres -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Ajusta layout para dispositivos móveis -->
+    <title>Formulário</title>
   </head>
   <body>
     <h1>Formulários em HTML</h1>
 
-    <form method="post" action="servidor.php">
-      <fieldset>
-        <legend>Login</legend>
-        <label for="nome">Nome</label><br />
-        <input
-          type="text"
-          name="nome"
-          id="nome"
-          placeholder="Digite o seu nome"
-          required
-          minlength="5"
-          maxlength="15"
-        />
-
+    <form method="post" action="servidor.php"> <!-- Envia dados via POST para servidor.php -->
+      <fieldset> <!-- Grupo de campos -->
+        <legend>Login</legend> <!-- Título do grupo -->
+        
+        <label for="nome">Nome</label><br /> <!-- Rótulo do campo nome -->
+        <input type="text" id="nome" name="nome" placeholder="Digite o seu nome" required minlength="5" maxlength="15" /> <!-- Campo de texto com validação -->
+        
         <br />
-        <label for="senha">Senha</label><br />
-        <input
-          type="password"
-          name="senha"
-          id="senha"
-          placeholder="Informe a sua senha"
-        />
+        <label for="senha">Senha</label><br /> <!-- Rótulo do campo senha -->
+        <input type="password" id="senha" name="senha" placeholder="Informe a sua senha" /> <!-- Campo de senha -->
       </fieldset>
 
       <br />
-      <label for="tel">Telefone</label><br />
-      <input
-        type="tel"
-        name="tel"
-        id="tel"
-        placeholder="Informe o seu telefone"
-      />
+      <label for="tel">Telefone</label><br /> <!-- Rótulo do campo telefone -->
+      <input type="tel" id="tel" name="tel" placeholder="Informe o seu telefone" /> <!-- Campo de telefone -->
+
       <br />
-      <label for="idade">Idade</label><br />
-      <input
-        type="number"
-        name="idade"
-        id="idade"
-        placeholder="Informe a sua idade"
-        min="12"
-        max="21"
-        required
-      />
-
-      <br /><br />
-      <select name="category" id="input-category">
+      <label for="idade">Idade</label><br /> <!-- Rótulo do campo idade -->
+      <input type="number" id="idade" name="idade" placeholder="Informe a sua idade" min="12" max="21" required /> <!-- Campo numérico com limites -->
+      
+      <br /><br /> <!-- Espaçamento -->
+      <select name="category" id="input-category"> <!-- Menu suspenso -->
         <option value="">Selecione...</option>
-
         <option value="eletronicos">Eletrônicos</option>
         <option value="moda">Moda</option>
-        <option value="ti" selected>Tecnologia</option>
+        <option value="ti" selected>Tecnologia</option> <!-- Opção padrão -->
       </select>
 
       <br /><br />
       <fieldset>
-        <legend>Radio</legend>
-        <input type="radio" name="client-type" id="radio-pf" value="pf" />
+        <legend>Radio</legend> <!-- Grupo de botões de opção -->
+        <input type="radio" name="client-type" id="radio-pf" value="pf" /> <!-- Opção Pessoa Física -->
         <label for="radio-pf">Pessoa Física</label>
         <br />
-        <input type="radio" name="client-type" id="radio-pj" value="pj" />
+        <input type="radio" name="client-type" id="radio-pj" value="pj" /> <!-- Opção Pessoa Jurídica -->
         <label for="radio-pj">Pessoa Jurídica</label>
         <br />
-        <input type="radio" name="client-type" id="radio-ps" value="ps" />
+        <input type="radio" name="client-type" id="radio-ps" value="ps" /> <!-- Opção Pessoa Senai -->
         <label for="radio-ps">Pessoa Senai</label>
-      </fieldset>
-      <br />
-      <fieldset>
-        <input type="radio" name="client-type-u" id="radio-pu" value="pu" />
-        <label for="radio-pu">Pessoa Universidade</label>
-        <br />
-        <input type="radio" name="client-type-u" id="radio-pup" value="pup" />
-        <label for="radio-pup">Pessoa Universidade Pública</label>
       </fieldset>
 
       <br />
       <fieldset>
-        <legend>Checkbox</legend>
-        <input type="checkbox" name="preferences" id="check-offers" value="offers" checked/>
+        <legend>Checkbox</legend> <!-- Grupo de caixas de seleção -->
+        <input type="checkbox" id="check-offers" name="preferences" value="offers" checked /> <!-- Opção Receber ofertas -->
         <label for="check-offers">Receber ofertas</label>
         <br />
-        <input type="checkbox" name="preferences" id="check-news" value="news" />
+        <input type="checkbox" id="check-news" name="preferences" value="news" /> <!-- Opção Newsletter -->
         <label for="check-news">Newsletter</label>
         <br />
-        <input type="checkbox" name="preferences" id="check-sup" value="sup" />
+        <input type="checkbox" id="check-sup" name="preferences" value="sup" /> <!-- Opção Suporte -->
         <label for="check-sup">Suporte</label>
       </fieldset>
 
       <h2>Botão comum</h2>
       <p>Botão apenas para uma ação interna. Não encerra o formulário.</p>
-      <input type="button" value="Mostrar mensagem" onclick="alert('Olá!')">
+      <input type="button" value="Mostrar mensagem" onclick="alert('Olá!')" /> <!-- Botão que dispara alerta -->
 
       <h2>Botão submit</h2>
-      <p>É o botão padrão de "enviar" que o fomulário possui ao final</p>
+      <p>É o botão padrão de "enviar" que o formulário possui ao final</p>
       <p>Ao clicar, o navegador:</p>
       <p>- Verifica se o formulário é válido;</p>
       <p>- Se houver erro, exibe mensagem de validação;</p>
       <p>- Se estiver tudo correto, envia os dados.</p>
-      <input type="submit" value="Enviar">
-
+      <input type="submit" value="Enviar" /> <!-- Botão que envia o formulário -->
     </form>
 
-    <br><br><br><br>
+    <br><br><br><br> <!-- Espaçamento -->
   </body>
 </html>
