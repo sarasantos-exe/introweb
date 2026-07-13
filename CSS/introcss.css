@@ -1,0 +1,62 @@
+* {
+    margin: 0; /*margem de 0 pixels em todos os lados de todos os elementos da página. ; para fechar*/
+    padding: 0; /*espaço interno de 0 pixels em todos os lados de todos os elementos da página. ; para fechar*/
+    box-sizing: border-box; /*inclui a largura e altura da borda e do preenchimento no cálculo do tamanho total do elemento. ; para fechar*/
+}
+
+body {
+
+/*background-color: #B0E0E6;*/ /*cor de fundo da página*/
+background-color: #7FFF00;
+color: #de1cde; /*cor do texto da página*/
+font-family: serif; /*tipo de fonte do texto da página*/
+font-size: 120%; /*tamanho da fonte do texto da página*/
+margin: 45px;
+padding: 0;
+line-height: 1.6; /*altura da linha do texto da página*/
+
+}
+
+h1 {
+    color: pink;
+    background-color: black;
+    margin: 19px; /*margem de 12 pixels em todos os lados do elemento h1. ; para fechar*/
+    padding: 12px; /*espaço interno de 12 pixels em todos os lados do elemento h1. ; para fechar*/
+    text-align: center; /*alinhamento do texto ao centro*/
+}
+
+h2,h3 {
+    font-weight: 800; /*grossura da fonte do texto dos elementos h2 e h3 definida como 800 (negrito). ; para fechar*/
+}
+
+/*link*/
+a {
+    color:coral;
+    text-decoration: none; /*remove o sublinhado do link*/
+}
+
+/*a:hover é um seletor de pseudo-classe que aplica estilos ao elemento a quando o usuário passa o mouse sobre ele. */
+a:hover {
+    background-color: white;
+    text-decoration: underline; /*adiciona um sublinhado ao link quando o usuário passa o mouse sobre ele*/
+    transition: 1s; /*adiciona uma transição suave de 1 segundo ao aplicar os estilos do hover*/
+}
+
+/* Seletor de ID */ /*o id é único, ou seja, só pode ser usado uma vez na página. */ /*O id significa identificação, ou seja, é um identificador único para um elemento HTML. */
+#intro {
+    background-color: palevioletred;
+    padding: 10px
+    /*margin:80px;*/
+    /*padding: 10px 20px 30px 40px*/
+    /*padding-left: 10px; padding-right: 20px; padding-top: 30px; padding-bottom: 40px; /*espaço interno de 10 pixels à esquerda, 20 pixels à direita, 30 pixels acima e 40 pixels abaixo do elemento com o id "intro". ; para fechar*/
+    width: 400px; /*largura do elemento com o id "intro" definida como 400 pixels. ; para fechar*/
+    height: 200px; /*altura do elemento com o id "intro" definida como 200 pixels. ; para fechar*/
+    border: 10px double yellow; /*borda sólida de 2 pixels de largura e cor preta ao redor do elemento com o id "intro". ; para fechar*/
+    border-radius: 6px; /*bordas arredondadas com raio de 20 pixels para o elemento com o id "intro". ; para fechar*/
+}
+
+p {
+
+margin: 20px; /*margem de 20 pixels em todos os lados do elemento p. ; para fechar*/
+
+}
