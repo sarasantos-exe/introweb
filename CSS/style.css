@@ -7,14 +7,16 @@
 
 /* Corpo da página */
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: #ffffff;
   color: #333;
 }
 
+h1 {font-family: 'Lobster', cursive;}
+
 /* Cabeçalho */
 .header {
-  background-color: #1e90ff;
+  background-color: #566b80;
   color: white;
   padding: 20px;
   text-align: center;
@@ -30,7 +32,17 @@ body {
 
 /* Seção de produtos */
 .products {
-  margin: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.categories,
+.product-list,
+#cadastro {
+  text-align: center;
+  margin-top: 40px;
 }
 
 /* Cards de produto */
@@ -45,6 +57,7 @@ body {
 /* Títulos */
 h2 {
   margin-bottom: 10px;
+  text-align: center;
 }
 
 /* Rodapé */

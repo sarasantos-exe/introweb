@@ -1,4 +1,4 @@
-/* Reset */
+/* Reset dos parâmetros para todos os elementos */
 * {
   margin: 0;
   padding: 0;
@@ -11,13 +11,14 @@ body {
     height: 2500px;
 }
 
-#geral {
-    width: 900px;
+#geral { /*é o container de todos os elementos da página*/
+    width: 650px;
+    height: 2500px;
     margin: 30px auto;
     background-color: cadetblue;
 }
 
-#bloco1, #bloco2 {
+#bloco1, #bloco2 { /* é o container dos elementos do bloco 1 e do bloco 2 */
     border: 3px solid black;
     padding: 20px;
     margin-bottom: 30px;
@@ -27,4 +28,85 @@ body {
 img {
     width: 200px;
     border: 3px solid red;
+}
+
+
+/*Entendendo POSITION: static, relative, absolute e fixed.*/
+
+/*fone de ouvido*/
+/*position static*/
+#img1 {
+    position: static; /* é o valor padrão, não é necessário declarar e ignora parâmetros de movimentação.*/
+    top: 100px; /*não funciona, pois o position é static*/
+    left: 100px; /*não funciona, pois o position é static*/
+}
+
+/*mouse*/
+/*position relative. A posição do elemento é relativa a sua posição normal. O espaço original
+ocupado continua ocupado mesmo após a movimentação.*/
+#img3 {
+position: relative; /*o elemento é posicionado em relação à sua posição normal, podendo ser movido com top, left, right e bottom*/
+    top: -100px; /*move o elemento 100px para baixo em relação à sua posição normal*/
+    left: 100px; /*move o elemento 100px para a direita em relação à sua posição normal*/
+}
+
+/*position absolute. A posição do elemento é relativa ao seu elemento pai mais próximo que tenha position relative, absolute ou fixed. Se não houver nenhum, será relativo ao body.*/
+/*elemento pai -> bloco 1*/
+#bloco1 {
+    position: relative; /*define o bloco 1 como referência para o posicionamento do elemento filho*/
+}
+
+/*elemento filho -> img 2 ( bola) */
+/*absolute -> a posição do elemento é relativa ao seu elemento pai mais próximo que tenha position relative, absolute ou fixed (qualquer diferente de static).
+O espaço original ocupado fica livre após a movimentação. Se não houver nenhum, será relativo ao body.*/
+#img2{
+    position: absolute; /*o elemento é posicionado em relação ao seu elemento pai mais próximo que tenha position relative, absolute ou fixed*/
+    top: 300px; /*move o elemento 100px para baixo em relação ao seu elemento pai (bloco 1)*/
+    left:1000px; /*move o elemento 100px para a direita em relação ao seu elemento pai (bloco 1)*/
+}
+
+
+/*mochila*/
+#img4{
+    position: fixed;
+    top: 50px;
+    left: 50px;
+}
+
+
+
+
+
+
+/*
+-----------------------------------------------------------------------------------------------
+Z-INDEX
+-----------------------------------------------------------------------------------------------
+*/
+
+
+
+/*Vamos testar Z-INDEX com os blocos 1 e 2.*/
+
+#bloco1 {
+    position: relative; /*define o bloco 1 como referência para o posicionamento do elemento filho*/
+}
+
+#bloco2 {
+    position: relative; /*define o bloco 2 como referência para o posicionamento do elemento filho*/
+    top: -120px;
+    left: 120px;
+}
+
+/*Agora sim vamos conhecer o Z-INDEX. Abriremos novos #bloco1 e 2 apenas para aprendizado, normalmente se usa apenas um bloco
+com tudo dentro de uma vez só.*/
+
+#bloco1 {
+    z-index: 2;
+}
+
+/*O bloco com maior valor dentro do z-index se sobrepões ao com menor.*/
+
+#bloco2 {
+    z-index: 1;
 }

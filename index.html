@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
+
+<link rel="stylesheet" href="../CSS/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+
   <body>
     <!-- Cabeçalho -->
     <header class="header">
@@ -13,29 +18,57 @@
         <ul>
           <li><a href="#home">Home</a></li>
           <li><a href="#produtos">Produtos</a></li>
-          <li><a href="#contato">Contato</a></li>
+          <li><a href="#cadastro">Cadastro</a></li>
         </ul>
       </nav>
     </header>
     <main id="home">
-      <section class="products" id="produtos">
-        <h2>~ PRODUTOS EM DESTAQUE ~</h2>
-        <article>
-          <img src ="../img/minissaia.jpg" alt="Mini saia verde militar" width="200px" height="200px">
-          <h3>Mini saia verde militar</h3>
-          <p>TAM: 36, 38, 40, 42, 44, 46</p>
-        </article>
-        <br>
-        <br>
-        <article>
-          <img src ="../img/macacao.png" alt="Macacão Esportivo Bike" width="200px" height="200px">
-          <h3>Macacão Esportivo Bike</h3>
-          <p>TAM: 36, 38, 40, 42, 44, 46</p>
-          <p>CORES: Verde e preto, Rosa e preto, Branco e azul, Amarelo e verde, Amarelo e preto, Preto e preto, Branco e rosa</p>
-        </article>
-        <br>
-        <br>
-      </section>
+      <h2>~ PRODUTOS EM DESTAQUE ~</h2>
+                  <section class="products" id="produtos">
+              <article>
+                <img src="../img/minissaia.jpg" alt="Mini saia verde militar" width="200px" height="200px">
+                <h3>Mini saia verde militar</h3>
+                <label for="tam-saia">Selecione um tamanho:</label>
+                <select id="tam-saia" required>
+                  <option value="">Selecione...</option>
+                  <option>34</option>
+                  <option>36</option>
+                  <option>38</option>
+                  <option>40</option>
+                  <option>42</option>
+                  <option>46</option>
+                </select>
+              </article>
+
+              <article>
+                <img src="../img/macacao.png" alt="Macacão Esportivo Bike" width="200px" height="200px">
+                <h3>Macacão Esportivo Bike</h3>
+                <label for="tam-macacao">Selecione um tamanho:</label>
+                <select id="tam-macacao" required>
+                  <option value="">Selecione...</option>
+                  <option>34</option>
+                  <option>36</option>
+                  <option>38</option>
+                  <option>40</option>
+                  <option>42</option>
+                  <option>46</option>
+                </select>
+
+                <label for="cor-macacao">Selecione uma cor:</label>
+                <select id="cor-macacao" required>
+                  <option value="">Selecione...</option>
+                  <option>Verde e preto</option>
+                  <option>Rosa e preto</option>
+                  <option>Branco e azul</option>
+                  <option>Amarelo e verde</option>
+                  <option>Amarelo e preto</option>
+                  <option>Preto e preto</option>
+                  <option>Branco e rosa</option>
+                </select>
+              </article>
+            </section>
+
+              
 
         <!-- Lista de categorias -->
         <aside class="categories">
@@ -84,12 +117,12 @@
 <br>
         <br>
         <!-- Formulário -->
-        <section id="contato">
+        <section id="cadastro">
           <h2>CADASTRO</h2>
-          <form class="form-contato" method="post" action="servidor.php">
+          <form class="form-cadastro" method="post" action="servidor.php">
             <fieldset>
               <legend>Dados para Login</legend>
-              <label for="nome">Nome</label><br />
+              <label for="nome">Nome</label> <br>
               <input
                 type="text"
                 name="nome"
@@ -99,7 +132,7 @@
                 minlength="3"
               />
 
-              <br />
+              
               <label for="senha">Senha</label><br />
               <input
                 type="password"
@@ -109,7 +142,7 @@
                 minlength="8"
               />
 
-              <br />
+              <br>
               <label for="email">E-mail</label><br />
               <input
                 type="email"
