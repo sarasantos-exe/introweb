@@ -1,4 +1,6 @@
 * {
+    /* O seletor universal (*) seleciona todos os elementos da página. */
+    /* { indica o início do bloco de regras CSS para o seletor universal. */
     margin: 0; /*margem de 0 pixels em todos os lados de todos os elementos da página. ; para fechar*/
     padding: 0; /*espaço interno de 0 pixels em todos os lados de todos os elementos da página. ; para fechar*/
     box-sizing: border-box; /*inclui a largura e altura da borda e do preenchimento no cálculo do tamanho total do elemento. ; para fechar*/
@@ -7,8 +9,8 @@
 body {
 
 /*background-color: #B0E0E6;*/ /*cor de fundo da página*/
-background-color: #7FFF00;
-color: #de1cde; /*cor do texto da página*/
+background-color: #86cf3c;
+color: #440144; /*cor do texto da página*/
 font-family: serif; /*tipo de fonte do texto da página*/
 font-size: 120%; /*tamanho da fonte do texto da página*/
 margin: 45px;
