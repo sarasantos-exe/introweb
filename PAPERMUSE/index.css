@@ -1,5 +1,5 @@
 * {
-    box-sizing:border-box;
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
@@ -8,29 +8,80 @@ body {
     background-color: #7B3F00; /*cor chocolate pro fundo*/
     color: #43464B; /*cor do texto principal*/
     font-family: Georgia, serif;
+    position: relative;
 }
 
 main {
-    background-color: white; /*área do conteúdo*/
     max-width: 1000px; /*limita a largura*/
-    margin: 20px auto; /*centraliza na tela*/
-    padding: 40px; /*espaço interno texto x borda*/
-    border-radius: 8px; /*arredondamento dos cantos*/
+    margin: 0px auto; /*centraliza na tela*/
+    margin-top: 160px;
+}
+
+.caixa-branca {
+    background-color: white;
+    padding: 60px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    scroll-margin-top: 120px;
+}
+
+main p {
+    color:#43464B;
+    line-height: 1.8;
+    margin-bottom: 25px;
 }
 
 .barra-carrossel {
     background-color: coral;
+    overflow: hidden;
+    white-space: nowrap;
     color: white;
     padding: 10px;
     text-align: center;
     font-size: 0.9rem;
+    padding: 5px 0;
+    display: flex;
+}
+
+.barra-carrossel div {
+    display: flex;
+    gap: 100px;
+    animation: girar 40s linear infinite; /*nome, tempo e repetição infinita*/
+}
+
+.grupo-frases {
+    display: flex;
+    gap: 100px;
+    padding-right: 100px;
+    animation: girar continuo 40s linear infinite;
+}
+
+@keyframes girar {
+    from { /*de*/
+        transform: translateX(0); /*começana posição original*/
+    }
+    to { /*para*/
+        transform: translateX(-100%); /*move a faixa toda para a esquerda*/
+    }
+
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: coral;
 }
 
 .header-principal {
+    position: fixed;
+    width: 100%;
+    z-index: 100;
     display: flex; /*alinha logo e botão lado a lado*/
     justify-content: space-between;
     align-items: center;
-    padding: 30px 5%;
+    padding: 20px 5%;
     background-color: chocolate;
 }
 
@@ -39,15 +90,16 @@ main {
     font-size: 2.5rem;
 }
 
-.btn-assinantes {
+.btn-comunidade {
     color: white;
     text-decoration: none; /*tira o sublinhado do link*/
     font-family: Arial, Helvetica, sans-serif;
     transition: 0.1s;
     font-weight: bold;
+    transition: 2s.;
 }
 
-.btn-assinantes:hover {
+.btn-comunidade:hover {
         color: #4B0082;
         text-decoration: underline;
         font-weight: bold;
@@ -65,7 +117,7 @@ nav a {
     text-decoration: none;
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
-    transition: 0.1s;
+    transition: 0.2s;
 }
 
 nav a:hover {
@@ -73,3 +125,116 @@ nav a:hover {
         text-decoration: underline;
         font-weight: bold;
     }
+
+.foto-perfil {
+    display:block;
+    max-width: 400px;
+    width: 100%;
+    margin: 40px auto;
+    border-radius: 8px;
+}
+
+.destaque {
+    font-weight: bold;
+}
+
+.frase-final {
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.fonte-papermuse {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: chocolate;
+}
+
+
+h1 {
+    
+    text-align: center;
+}
+
+
+footer {
+    color: white;
+    text-align: center;
+    padding: 40px 0;
+    margin-top: 10px;
+}
+
+.footer-conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.redes-sociais {
+    display: flex;
+    gap: 15px;
+}
+
+.redes-sociais img {
+    width: 30px;
+    transition: 0.3s;
+}
+
+.redes-sociais a:hover img {
+    transform: scale(1.1);
+    filter:brightness(1.2);
+}
+
+.menu-navegacao ul li {
+    position: relative;
+    display: inline-block;
+}
+
+.submenu {
+    display: none;
+    position:absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgb(178, 150, 179);
+    z-index: 1000;
+    list-style: none;
+    padding: 15px;
+    min-width: 200px;
+}
+
+.submenu li {
+    display: block;
+    margin: 8px 0;
+}
+
+.menu-navegacao ul li:hover .submenu {
+    display: block;
+}
+
+.icone-decorativo {
+    position: fixed;
+    width: 100%;
+    left:;
+    z-index: -1;
+    opacity: 0,6;
+    align-items: center;
+}
+
+.imagem-bem-vindos {
+    width: 100%;
+    max-width: 600px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+    animation: aparecerSuave 3.5s ease-out;
+}
+
+@keyframes aparecerSuave {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

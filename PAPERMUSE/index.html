@@ -10,15 +10,36 @@
 </head>
 <body>
 
+    <img src="icones-site-img.png" class="icone-decorativo" alt="Decoração Literária">
+
     <header> <!--para o topo-->
 
         <!--barra superior pro carrossel de frases-->
         <div class="barra-carrossel">
+            <div class="grupo-frases">
         <span>Bem-vindos(a) a PaperMuse!</span>
         <span>Onde começa a SUA história?</span>
+        <span>Um parágrafo de cada vez!</span>
         <span>O que nós vamos ler hoje?</span>
         <span>Atualizações em breve!</span>
+        <span>Bem-vindos(a) a PaperMuse!</span>
+        <span>Onde começa a SUA história?</span>
         <span>Um parágrafo de cada vez!</span>
+        <span>O que nós vamos ler hoje?</span>
+        <span>Atualizações em breve!</span>
+            </div>
+            <div class="grupo-frases">
+        <span>Bem-vindos(a) a PaperMuse!</span>
+        <span>Onde começa a SUA história?</span>
+        <span>Um parágrafo de cada vez!</span>
+        <span>O que nós vamos ler hoje?</span>
+        <span>Atualizações em breve!</span>
+        <span>Bem-vindos(a) a PaperMuse!</span>
+        <span>Onde começa a SUA história?</span>
+        <span>Um parágrafo de cada vez!</span>
+        <span>O que nós vamos ler hoje?</span>
+        <span>Atualizações em breve!</span>
+            </div>
         </div>
 
         <!--nome e assinantes-->
@@ -26,16 +47,41 @@
             <h1 class="logo">PaperMuse</h1>
             <nav class="menu-navegacao"> <!--para o menu lateral ou superior-->
                 <ul>
-                    <li><a href="#">INÍCIO</a></li>
-                    <li><a href="#">MEUS LIVROS</a></li>
-                    <li><a href="#">INDICO</a></li>
-                    <li><a href="#">BONS HÁBITOS</a></li>
+                    <li><a href="#inicio">INÍCIO</a></li>
+
+                    <!--submeno MEUS LIVROS-->
+                    <li><a href="#">MEUS LIVROS</a>
+                        <ul class="submenu">
+                            <li><a href="#">Originais</a></li> <br>
+                            <li><a href="#">Fanfics</a></li> <br>
+                            <li><a href="#">Contos</a></li> <br>
+                        </ul>
+                    </li>
+
+                    <!--submenu RESENHAS-->
+                    <li>
+                        <a href="#">RESENHAS</a>
+                        <ul class="submenu">
+                            <li><a href="#">Romance</a></li> <br>
+                            <li><a href="#">Young Adult</a></li> <br>
+                            <li><a href="#">Thriller Psicológico</a></li> <br>
+                            <li><a href="#">Religiosos</a></li> <br>
+                            <li><a href="#">Terror Psicológico</a></li> <br>
+                            <li><a href="#">Criminal</a></li> <br>
+                            <li><a href="#">Horror</a></li> <br>
+                            <li><a href="#">Fantasia</a></li> <br>
+                            <li><a href="#">Monster Romance</a></li> <br>
+                            <li><a href="#">Outros</a></li> <br>
+                        </ul>
+                        </li>
+
                     <li><a href="#">ATUALIZAÇÕES</a></li>
-                    <li><a href="#">SOBRE MIM</a></li>
+                    <li><a href="#sobre-mim">SOBRE MIM</a></li>
+                    <li><a href="#contato">CONTATO</a></li>
 
                 </ul>
             </nav>
-            <a href="#" class="btn-assinantes">ÁREA DE ASSINANTES</a>
+            <a href="#" class="btn-comunidade">ÁREA DA COMUNIDADE</a>
         </div>
 
     </header>
@@ -44,11 +90,127 @@
 
     <main> <!---onde ficará o SOBRE MIM-->
 
+<!---nova sessão: Página Inicial-->
+<!--primeira caixa: home-->
+<section id="inicio" class="caixa-branca">
+    <img src="logo2-ppm.png" alt="Escultura grega feminina segurando uma pena enquanto olha por cima de um livro, pensativa." class="imagem-bem-vindos">
+    <h1>Bem vindos ao meu refúgio literário!</h1>
+    <br>
+       <p> O <span class="fonte-papermusei">PaperMuse</span> nasceu como um projeto de um curso de programação, mas acabou amadurecendo e se transformando em um projeto muito mais pessoal, dedicado ao que eu mais gosto de fazer: ler, escrever, recomendar bons livros e acompanhar tudo o que acontece no mundo literário.</p>
+
+<p>Oficialmente concluído em 16/07/2026, este blog não promete ser um manual cheio de técnicas dizendo como você deve escrever o seu livro. Na verdade, a proposta é quase o contrário.</p>
+
+<p>A ideia é construir uma comunidade de leitores e escritores que escrevem por prazer.</p>
+
+<p>Vou compartilhar meus métodos de escrita, as ideias que surgem na minha cabeça, o que me inspira, plataformas interessantes para publicar histórias, livros que gostei e tudo aquilo que faz parte da minha experiência como escritora.</p>
+
+<p>Mas também não espere encontrar alguém que tenha todas as respostas. Eu escrevo há cerca de 12 anos, sempre por paixão e curiosidade, sem nunca me preocupar muito com regras técnicas ou fórmulas prontas para criar um best-seller. Essa é a experiência que eu posso compartilhar com você. Além, é claro, de alguns plots que considero incríveis e de um rostinho bonito.</p>
+
+<p>Então fique à vontade para explorar o blog, acompanhar as atualizações, entrar em contato comigo, recomendar livros para futuras resenhas ou simplesmente passear pelas páginas.</p>
+
+<p>Meu maior objetivo com o PaperMuse é criar uma comunidade literária acolhedora, não competitiva e realmente engajada, onde ler e escrever sejam, antes de qualquer coisa, um prazer compartilhado.</p>
+
+<p>E você pode fazer parte dessa história :) .</p>
+    </h2>
+</section>
+
+
+
+<section id="sobre-mim" class="caixa-branca">
+    <h1>SOBRE MIM</h1>
+    <br>
+<p>Meu nome é <span class="destaque">Sara Santos</span>. Na verdade, é um pouco mais longo que isso, mas é tudo que você precisa saber. Antigo nome artístico, <span class="destaque">@unworthily</span>, ou Sara Ketlyn. Nasci em 2005, no primeiro mês e no segundo dia.
+</p>
+<p>Gostaria de dizer que houve um momento da minha vida em que eu descobri que era apaixonada por inventar histórias, personagens, conflitos, mundos e todo esse tipo de coisa, mas a minha vida inteira é esse momento.
+</p>
+<p>Então, vou falar sobre quando eu realmente comecei a escrever, aos 9 anos. Uma idade inapropriada para pertencer à escritora de uma fanfic mal escrita de um anime tão mal escrito e dirigido quanto (<span class="destaque">High School Of The Dead</span>).
+</p>
+<p>Quase uma década mais tarde, eu teria certeza que qualquer obsessão pequena me faria escrever. Qualquer uma mesmo. Filmes, séries, livros, jogos, personagens que ninguém imaginaria que teriam uma fanfic, ideias e conceitos deformados e transformados em algo que eu pudesse saborear enquanto adquiria uma tendinite que me assombraria pelos próximos anos.
+</p>
+Pois é, são tempos difíceis quando você ainda é uma adolescente criativa sem um notebook e com caderno e caneta que não duram tanto quanto você gostaria.
+</p>
+<P>De qualquer maneira, eu escrevia e lia tudo o que eu queria. E, se eu queria ler algo que não existia, eu escrevia.
+</p>
+<P>Mas existe um problema em ser, bom, eu. Você simplesmente não consegue terminar um livro. Acho que é quase impossível isso ser uma experiência única e individual, mas não vejo muitos escritores falando sobre isso. Só no Wattpad (berço da minha primeira fanfic já citada e da maioria das minhas obras), acumulo cerca de 400 rascunhos de ideias e histórias de fato originais e incompletas na minha conta principal.
+</p>
+<P>A secundária conta com mais ou menos 70 fanfics não concluídas, o que eu diria que é até um número baixo pra geração em que eu cresci, onde existem mais fanfics da Selena Gomez com o Faustão ou de algum membro do BTS sendo ômega do que shipps reais.
+</p>
+<p> livro que cheguei mais perto de terminar e que foi meu orgulho durante anos chegou a alcançar 35 mil visualizações. Não é um número assustador**, mas** eram leitores assíduos, que realmente me acompanhavam e interagiam comigo e com a história.
+</p>
+<p>Ele se chamava "<span class="destaque">NÃO TOQUE NO MEU DIÁRIO</span>" e talvez seja exatamente o que parece apenas para mim que já o conheço: um romance adolescente com problemas bobos e romances mais complicados do que deveriam ser. Ou iniciou assim.
+</p>
+<p>A história cresceu, tomou forma, se modificou e, em algum momento, parecia mais algo realmente meu do que uma ideia inspirada em outro romance adolescente com problemas bobos e romances mais complicados do que já deveriam ser (<span class="destaque">PARA TODOS OS GAROTOS QUE JÁ AMEI</span>).
+</p>
+<p>Para mim, meu livro deixou de ser uma coisa gerada através de outro algo e passou a ser <span class="destaque">NÃO TOQUE NO MEU DIÁRIO</span>. É confuso, eu sei. Mas a sensação é indescritível e ininteligível mesmo. E incrível. Pena que esse eu também não terminei.
+</p>
+<p>Bom, o ponto é que eu amo ler e escrever. Faz parte da minha personalidade. E os gêneros para os quais eu produzo e os quais eu consumo são diversos. Me aperfeiçoei em temas mais pesados, como dark romance, thrillers psicológicos, criminais, terror psicológico, terror de folclores, fantasia sombria, entre outros.
+</p>
+<p>As histórias mais soft foram sendo deixadas pra depois, mas não completamente abandonadas. É bom respirar de vez em quando, embora seja engraçado escrever uma briga com uma patricinha irritante depois de descrever um massacre familiar numa noite de aniversário ou uma tentativa de homicídio numa fábrica abandonada.
+</p>
+<p>Atualmente (o que significa pelo menos nos últimos 7 anos), não estou focada em nenhuma obra específica. Mas praticamente toda semana surge um plot novo e super inovador, interessante e com altas possibilidades de sucesso na minha cabeça.
+</p>
+<p>E então eu engreno em mais um projeto que juro não abandonar como todos os outros.
+</p>
+<p>Se isso fosse verdade, eu não estaria escrevendo isso aqui.
+</p>
+<p>Não me leve a mal, não estou tentando me queimar como escritora ou te convencer a não ler meus livros nem nada.
+</p>
+<p>Mas preciso ser sincera. Depois da ideia, planejamento do livro (geralmente inteiro, começo, meio e fim), capa, sinopse, epígrafe, prólogo, escolha de elenco pra imaginação trabalhar melhor e planejar inclusive os livros que viriam depois (acontece mais vezes do que eu gostaria de admitir), eu abandono o que parecia ser o meu projeto da década.
+</p>
+<p>E fico desolada por uns 2 dias, até ter outra ideia inovadora e incrível. Não sei por que faço toda a parte mais difícil e depois a história em si não sai, mas é algo que estou tentando corrigir.
+</p>
+<p>Há alguns meses comecei a pesquisar sobre métodos de escrita para tentar melhorar a maneira como eu faço essa coisa de planejar tudo e não produzir nada.
+</p>
+<p>O único que eu ainda não tentei foi pegar os acontecimentos já estabelecidos ao longo de toda a história e ir criando capítulos em cima deles sem ordem específica ou cronológica, simplesmente ir escrevendo as cenas mais marcantes, ou revoltantes, ou empolgantes e depois uni-las com cenas de conexão entre esses acontecimentos e de descanso da tensão, porque até a fugitiva de um reino em guerra precisa de um banho numa taberna duvidosa na semana.
+</p>
+<p>Eu ainda não concretizei o método. Nem testei, honestamente. Mas estou ansiosa para fazer isso, sinto que pode ser algo que realmente me ajude. O problema é que, mais do que procrastinar, eu AMO planejar as coisas.
+</p>
+<p>Então escrever só o que eu sinto e DEPOIS planejar como cheguei até ali, pensar o que vai ser depois e etc. me mata um pouco. Mas é algo necessário, porque esse ciclo de começar e desistir está me cansando e defasando o meu amor pelas histórias.
+</p>
+<p>Talvez a esse ponto você esteja se perguntando se eu tenho algum livro publicado comercialmente. Ou talvez você tenha prestado atenção de verdade até aqui e saiba que obviamente não, visto que eu nem tenho um livro finalizado para publicar, nem física nem digitalmente.
+</p>
+<p>Mas pensei muito nisso durante muitos anos, até tentei me forçar a escrever para conseguir publicar, mas essa é definitivamente a pior coisa que um escritor pode fazer consigo mesmo.
+</p>
+<p>De qualquer maneira, escrevi em muitas plataformas online e gratuitas pelo simples prazer de dividir minhas histórias com o mundo: Wattpad, Spirit Fanfics, Nyah Fanfiction, Inkspired, WriterTools, entre outros, como também editores de texto comuns sem publicação.
+</p>
+<p>Para finalizar, gostaria de dizer que se você transforma algo que gosta genuinamente de fazer em uma obrigação, o prazer por essa coisa deixa de existir. Mas isso não significa que o amor desaparece.
+</p>
+<p>Eu sempre soube que ser escritor no Brasil não tinha vantagens. Talvez você tivesse sorte se seu livro fosse muito hypado depois de divulgação pesada, ou talvez conseguisse contrato com uma editora que não pegasse TANTO dos seus ganhos, ou talvez ainda você pudesse viver da sua arte como escritor.
+</p>
+<p>E eu não tenho medo de riscos. Mas me obrigar a concluir algo que eu nem poderia gostar para depois publicar de maneira que me deixaria infeliz seria como pisar no meu sonho duas vezes. Então escrever se tornou um hobby. E talvez seja para sempre. Ou talvez um dia eu me torne escritora. Na verdade, isso não importa.
+</p>
+<p>Quero que as pessoas conheçam o meu trabalho, é claro, mas quero principalmente que <span class="destaque">ENTENDAM e SINTAM</span> ele. E isso eu consigo como fiz durante todos esses anos.
+</p>
+<p>Isso é tudo, até logo! 😊 Espero que a leitura tenha sido interessante para você e que continue acompanhando nosso blog (faça parte dessa comunidade, é grátis!). Para fins de curiosidade, essa aí embaixo sou eu. 😉
+</p>
+
+<!--minha foto aqui-->
+<img src="soueu.jpeg" alt="Garota negra de cabelo preto e franja, sorriso discreto" class="foto-perfil">
+
+<p> <p class="frase-final">Se você chegou até aqui, provavelmente gosta de histórias tanto quanto eu. Então, seja bem-vindo ao <span class="fonte-papermuse">PaperMuse</span>!</p>
+</p>  
+    </section>
     </main>
 
 
     <footer> <!--para as informações de contato e redes sociais no final-->
+        <footer id="contato" >
+<div class="footer-conteudo">
+    <p>&copy; 2026 <span class="fonte-papermuse">PaperMuse</span>. Criado por Sara Santos.</p>
+    <div class="redes-sociais">
+        <a href="https://www.instagram.com/sara_ksantxs/" target="_blank">
+            <img src="img-instagram.png" alt="Siga-me no Instagram!">
+        </a>
 
+        <a href="https://www.tiktok.com/@sara_ketlxn?_r=1&_t=ZS-9861s4DhTuB" target="_blank">
+            <img src="img-tiktok.png" alt="Siga-me no TikTok!">
+        </a>
+
+        <a href="https://wa.me/5521976302952" target="_blank">
+            <img src="img-whatsapp.png" alt="Entre em contato comigo pelo whatsapp!">
+        </a>
+    </div>
+</div>
     </footer>
 
 
